@@ -4,35 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Movies!</title>
-    <style>
-      /* Part 3: Your styling goes here */
-    </style>
-    <script>
-      function reverseString(s) {
-        return s.split("").reverse().join("");
-      }
-
-      window.onload = function () {
-        const xhr = new XMLHttpRequest();
-        xhr.onload = function () {
-          const bodyElement = document.querySelector("body");
-          if (xhr.status == 200) {
-            /* Part 2: Build the HTML elements here and append them to the body */
-            bodyElement.append(reverseString(xhr.responseText));
-          } else {
-            bodyElement.append(
-              "Daten konnten nicht geladen werden, Status " +
-                xhr.status +
-                " - " +
-                xhr.statusText,
-            );
-          }
-        };
-        xhr.open("GET", "/movies");
-        xhr.send();
-      };
-    </script>
+    <link rel="stylesheet" href="css/base-style.css">
+    <link rel="stylesheet" href="css/main-style.css">
   </head>
-
-  <body></body>
+  <body>
+    <div id="app"></div>
+    <script src="/js/main.js" type="module"></script>
+  </body>
 </html>
