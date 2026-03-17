@@ -3,7 +3,7 @@ const path = require('path')
 const app = express()
 
 // Serve static content in directory 'files'
-app.use(express.static(path.join(__dirname, 'files')));
+app.use(express.static(path.join(__dirname, 'files')))
 
 // Configure a 'get' endpoint for data..
 app.get('/movies', function (req, res) {
@@ -13,5 +13,4 @@ app.get('/movies', function (req, res) {
 
 app.listen(3000)
 
-console.log("Server now listening on http://localhost:3000/")
-
+console.log('Server now listening on http://localhost:3000/')
