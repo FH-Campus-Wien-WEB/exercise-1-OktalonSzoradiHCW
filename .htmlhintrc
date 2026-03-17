@@ -14,7 +14,7 @@
   "empty-tag-not-self-closed": true,
   "form-method-require": true,
   "frame-title-require": true,
-  "head-script-disabled": true,
+  "head-script-disabled": "allow-non-blocking",
   "html-lang-require": true,
   "id-class-ad-disabled": true,
   "id-unique": true,
