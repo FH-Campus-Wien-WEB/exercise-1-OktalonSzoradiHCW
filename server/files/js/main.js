@@ -13,10 +13,7 @@ window.onload = function () {
       appElement.append(reverseString(xhr.responseText))
     } else {
       appElement.append(
-        'Data could not be loaded. Status ' +
-          xhr.status +
-          ' - ' +
-          xhr.statusText
+        `Data could not be loaded. Status ${xhr.status} - ${xhr.statusText}`
       )
     }
   }
