@@ -33,6 +33,7 @@ function createMovieCard (movie) {
     movieGenres.appendChild(movieGenre)
   }
   movieCard.appendChild(movieGenres)
+  // genre.map() could work too
 
   const movieDescription = document.createElement('p')
   movieDescription.classList = 'movie__description'
