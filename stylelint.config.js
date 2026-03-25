@@ -22,6 +22,7 @@ export default {
   rules: {
     'csstools/media-use-custom-media': 'never',
     'csstools/value-no-unknown-custom-properties': true,
+    'defensive-css/no-fixed-sizes': null,
     'defensive-css/require-at-layer': null,
     'plugin/declaration-block-no-ignored-properties': true,
     'plugin/no-browser-hacks': [true],
